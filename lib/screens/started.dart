@@ -29,7 +29,7 @@ class GettingStarted extends StatelessWidget{
               )
 ,
              Padding(
-               padding: const EdgeInsets.all(14.0),
+               padding: const EdgeInsets.all(20.0),
                child: Column(
                crossAxisAlignment: CrossAxisAlignment.stretch,
                children: <Widget>[
@@ -38,16 +38,19 @@ class GettingStarted extends StatelessWidget{
                     borderRadius: BorderRadius.circular(5)),
                     color: Theme.of(context).primaryColor,
                     textColor: Colors.white, 
-                    child: const Text('Getting started',style: TextStyle(fontSize: 15,fontFamily: 'Schyler',),), ),
+                    child: const Text('Rejoinez nous!',style: TextStyle(fontSize: 15,fontFamily: 'Schyler',),), ),
                     Row(
                       mainAxisAlignment: MainAxisAlignment.center,
                       children: <Widget>[
                       
-                      const Text('Have an account ?',style: TextStyle(fontSize: 18,fontFamily: 'Schyler',),),
+                      Text('Vous êtes un pompier ?',style: TextStyle(fontSize: 16,fontFamily: 'Schyler', 
+                      color: Theme.of(context).primaryColor),),
 
                       FlatButton(onPressed: (){},
                     
-                      child: const Text('Login',style: TextStyle(fontSize: 18,fontFamily: 'Schyler',),),
+                      child:  Text('Se connecter',style: TextStyle(fontSize: 16,fontFamily: 'Schyler', 
+                      color: Theme.of(context).primaryColor, decoration: TextDecoration.underline,
+                      fontWeight: FontWeight.bold),),
                   )
                 ],)
                ],),
